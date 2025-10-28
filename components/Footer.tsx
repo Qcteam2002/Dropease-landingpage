@@ -34,7 +34,7 @@ const Footer = () => {
             viewport={{ once: true }}
             className="flex flex-wrap justify-center gap-6 mb-6"
           >
-            {footerLinks.map((link, index) => (
+            {footerLinks.map((link: any, index: number) => (
               <a
                 key={index}
                 href={link.href}
