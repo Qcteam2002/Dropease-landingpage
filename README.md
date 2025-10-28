@@ -107,6 +107,31 @@ npm run start
 - **Hover Scale**: 1.03 - 1.05
 - **Pulse Glow**: 2s infinite
 
+## 📝 Content Guidelines
+
+### Tone of Voice
+
+Dropease focuses on **USER VALUE**, not technology buzzwords.
+
+**✅ DO:**
+- Use "Tự động" instead of "AI-powered"
+- Focus on outcomes: "Tiết kiệm 80% thời gian"
+- Specific results: "Tăng conversion 25%"
+- Simple language: "Biết chính xác ai sẽ mua"
+
+**❌ DON'T:**
+- Use "AI-powered", "ML algorithms", "Neural networks"
+- Vague statements: "Better results", "Improved performance"
+- Corporate jargon: "Leverage", "Synergy", "Paradigm shift"
+
+**📚 Full Guides:**
+- **[TONE-VOICE-GUIDE.md](./TONE-VOICE-GUIDE.md)** - Complete tone of voice & messaging guide
+- **[CONTENT-QUICK-REF.md](./CONTENT-QUICK-REF.md)** - Quick reference card (print & keep!)
+
+**Formula:** `Problem → Solution → Value → Action`
+
+---
+
 ## 📦 Dependencies chính
 
 - **Next.js**: ^14.2.0 - React framework

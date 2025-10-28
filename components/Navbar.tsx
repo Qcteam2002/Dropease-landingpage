@@ -4,6 +4,7 @@ import { motion, useScroll, useTransform } from 'framer-motion'
 import { useState, useEffect } from 'react'
 import { Menu, X, Globe } from 'lucide-react'
 import { useLanguage } from '@/contexts/LanguageContext'
+import Link from 'next/link'
 
 /**
  * Navbar - Dropease.ai branding with language switcher
@@ -31,10 +32,11 @@ const Navbar = () => {
   }, [])
 
   const navLinks = [
-    { label: t('nav.features'), href: '#features' },
-    { label: t('nav.howItWorks'), href: '#how-it-works' },
-    { label: t('nav.pricing'), href: '#pricing' },
-    { label: t('nav.testimonials'), href: '#testimonials' },
+    { label: t('nav.home'), href: '/' },
+    { label: t('nav.features'), href: '/#features' },
+    { label: t('nav.howItWorks'), href: '/#how-it-works' },
+    { label: t('nav.pricing'), href: '/#pricing' },
+    { label: t('nav.testimonials'), href: '/#testimonials' },
   ]
 
   const languages = [
@@ -52,15 +54,16 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <motion.a
-            href="#"
-            className="flex items-center gap-1 group"
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-          >
-            <span className="text-2xl font-bold text-white">Dropease</span>
-            <span className="text-2xl font-bold text-accent-cyan">.</span>
-          </motion.a>
+          <Link href="/">
+            <motion.div
+              className="flex items-center gap-1 group cursor-pointer"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+            >
+              <span className="text-2xl font-bold text-white">Dropease</span>
+              <span className="text-2xl font-bold text-accent-cyan">.</span>
+            </motion.div>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">

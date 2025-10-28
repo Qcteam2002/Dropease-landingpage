@@ -3,8 +3,9 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
-import { PieChart, UserCheck, Image, Settings2, RefreshCw, TrendingUp } from 'lucide-react'
+import { PieChart, UserCheck, Image, Settings2, RefreshCw, TrendingUp, ArrowRight } from 'lucide-react'
 import { useLanguage } from '@/contexts/LanguageContext'
+import Link from 'next/link'
 
 /**
  * Features Section - Tính năng của Dropease
@@ -21,18 +22,21 @@ const FeaturesSection = () => {
       title: t('features.list.segmentation.title'),
       description: t('features.list.segmentation.desc'),
       gradient: 'from-purple-500 to-pink-500',
+      link: '/features/audience-insight', // Link to detail page
     },
     {
       icon: UserCheck,
       title: t('features.list.optimization.title'),
       description: t('features.list.optimization.desc'),
       gradient: 'from-blue-500 to-cyan-500',
+      link: '/features/smart-content', // Link to detail page
     },
     {
       icon: Image,
       title: t('features.list.visuals.title'),
       description: t('features.list.visuals.desc'),
       gradient: 'from-violet-500 to-purple-500',
+      link: '/features/visual-intelligence', // Link to detail page
     },
     {
       icon: Settings2,
@@ -45,6 +49,7 @@ const FeaturesSection = () => {
       title: t('features.list.sync.title'),
       description: t('features.list.sync.desc'),
       gradient: 'from-orange-500 to-red-500',
+      link: '/features/ai-visibility', // Link to detail page
     },
     {
       icon: TrendingUp,
@@ -113,13 +118,8 @@ const FeaturesSection = () => {
         >
           {features.map((feature, index) => {
             const Icon = feature.icon
-            
-            return (
-              <motion.div
-                key={index}
-                variants={cardVariants}
-                className="group relative"
-              >
+            const CardContent = (
+              <>
                 {/* Animated border gradient */}
                 <div className="absolute -inset-[1px] bg-gradient-to-r from-accent-violet via-accent-cyan to-accent-violet rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-sm animate-[spin_4s_linear_infinite]" />
                 
@@ -136,16 +136,41 @@ const FeaturesSection = () => {
                     </div>
 
                     {/* Title */}
-                    <h3 className="text-xl font-semibold mb-3 text-white">
-                      {feature.title}
+                    <h3 className="text-xl font-semibold mb-3 text-white flex items-center justify-between">
+                      <span>{feature.title}</span>
+                      {(feature as any).link && (
+                        <ArrowRight size={20} className="text-accent-cyan group-hover:translate-x-1 transition-transform" />
+                      )}
                     </h3>
 
                     {/* Description */}
                     <p className="text-gray-400 leading-relaxed">
                       {feature.description}
                     </p>
+                    
+                    {(feature as any).link && (
+                      <div className="mt-4 text-sm text-accent-cyan font-semibold group-hover:underline">
+                        Learn more →
+                      </div>
+                    )}
                   </div>
                 </div>
+              </>
+            )
+            
+            return (
+              <motion.div
+                key={index}
+                variants={cardVariants}
+                className="group relative"
+              >
+                {(feature as any).link ? (
+                  <Link href={(feature as any).link} className="block">
+                    {CardContent}
+                  </Link>
+                ) : (
+                  CardContent
+                )}
               </motion.div>
             )
           })}
