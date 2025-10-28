@@ -101,7 +101,7 @@ const DetailedFeaturesSection = () => {
 
                 {/* Features list */}
                 <ul className="space-y-4">
-                  {feature.features.map((item, itemIndex) => (
+                {feature.features.map((item: any, itemIndex: number) => (
                     <li key={itemIndex} className="flex items-start gap-3">
                       <div className="flex-shrink-0 w-6 h-6 rounded-full bg-accent-cyan/20 flex items-center justify-center mt-1">
                         <svg
