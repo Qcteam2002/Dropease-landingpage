@@ -75,7 +75,7 @@ const PersonaDemoSection = () => {
           animate={isInView ? 'visible' : 'hidden'}
           className="grid grid-cols-1 md:grid-cols-3 gap-6"
         >
-          {personas.map((persona, index) => (
+          {personas.map((persona: any, index: number) => (
             <motion.div
               key={index}
               variants={cardVariants}
@@ -106,7 +106,7 @@ const PersonaDemoSection = () => {
                   {/* Tone tags */}
                   <div className="flex flex-wrap gap-2">
                     <span className="text-xs text-gray-400 font-medium">Tone:</span>
-                    {persona.tones.map((tone, toneIndex) => (
+                    {persona.tones.map((tone: any, toneIndex: number) => (
                       <span
                         key={toneIndex}
                         className="px-3 py-1 rounded-md bg-accent-violet/20 text-accent-violet text-sm font-medium"
