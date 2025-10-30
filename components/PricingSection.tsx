@@ -5,6 +5,7 @@ import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 import { Check } from 'lucide-react'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { useAnalytics } from '@/hooks/useAnalytics'
 
 /**
  * Pricing Section - Bảng giá Dropease
@@ -14,6 +15,7 @@ const PricingSection = () => {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-100px' })
   const { t, language } = useLanguage()
+  const { trackCTAClick, trackClick } = useAnalytics()
 
   const pricingTiers = [
     {
@@ -177,6 +179,7 @@ const PricingSection = () => {
 
                   {/* CTA button */}
                   <button
+                    onClick={() => trackCTAClick(tier.cta, `pricing_${tier.name.toLowerCase()}`)}
                     className={`w-full py-3.5 rounded-lg font-semibold transition-all duration-300 mb-8 ${
                       tier.popular
                         ? 'bg-gradient-to-r from-accent-violet to-accent-cyan text-white hover:shadow-[0_0_30px_rgba(139,92,246,0.5)] hover:scale-105'
@@ -215,7 +218,10 @@ const PricingSection = () => {
           <p className="text-gray-400 mb-2">
             {t('pricing.footer')}
           </p>
-          <button className="text-accent-cyan hover:text-accent-violet transition-colors font-semibold">
+          <button 
+            onClick={() => trackClick('compare_plans', 'pricing_section')}
+            className="text-accent-cyan hover:text-accent-violet transition-colors font-semibold"
+          >
             {t('pricing.compareLink')}
           </button>
         </motion.div>

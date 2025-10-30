@@ -4,6 +4,7 @@ import { motion, useScroll, useTransform } from 'framer-motion'
 import { useState, useEffect } from 'react'
 import { Menu, X, Globe } from 'lucide-react'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { useAnalytics } from '@/hooks/useAnalytics'
 import Link from 'next/link'
 
 /**
@@ -15,6 +16,7 @@ const Navbar = () => {
   const [showLangMenu, setShowLangMenu] = useState(false)
   const { scrollY } = useScroll()
   const { language, setLanguage, t } = useLanguage()
+  const { trackClick, trackLanguageSwitch } = useAnalytics()
   
   const navbarBg = useTransform(
     scrollY,
@@ -71,6 +73,7 @@ const Navbar = () => {
               <motion.a
                 key={index}
                 href={link.href}
+                onClick={() => trackClick('nav_link', link.label)}
                 className="text-gray-300 hover:text-white transition-colors duration-200 font-medium"
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.95 }}
@@ -109,6 +112,7 @@ const Navbar = () => {
                       onClick={() => {
                         setLanguage(lang.code as 'vi' | 'en')
                         setShowLangMenu(false)
+                        trackLanguageSwitch(lang.code)
                       }}
                       className={`w-full px-4 py-3 flex items-center gap-3 hover:bg-white/5 transition-colors ${
                         language === lang.code ? 'bg-accent-violet/10 text-accent-cyan' : 'text-gray-300'
@@ -155,7 +159,10 @@ const Navbar = () => {
                 <a
                   key={index}
                   href={link.href}
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  onClick={() => {
+                    setIsMobileMenuOpen(false)
+                    trackClick('nav_link_mobile', link.label)
+                  }}
                   className="text-gray-300 hover:text-white transition-colors duration-200 font-medium py-2"
                 >
                   {link.label}
@@ -172,6 +179,7 @@ const Navbar = () => {
                       onClick={() => {
                         setLanguage(lang.code as 'vi' | 'en')
                         setIsMobileMenuOpen(false)
+                        trackLanguageSwitch(lang.code)
                       }}
                       className={`flex-1 px-3 py-2 rounded-lg border transition-colors ${
                         language === lang.code

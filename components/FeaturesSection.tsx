@@ -5,6 +5,7 @@ import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 import { PieChart, UserCheck, Image, Settings2, RefreshCw, TrendingUp, ArrowRight } from 'lucide-react'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { useAnalytics } from '@/hooks/useAnalytics'
 import Link from 'next/link'
 
 /**
@@ -15,6 +16,7 @@ const FeaturesSection = () => {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-100px' })
   const { t } = useLanguage()
+  const { trackClick, trackFeatureView } = useAnalytics()
 
   const features = [
     {
@@ -165,7 +167,14 @@ const FeaturesSection = () => {
                 className="group relative"
               >
                 {(feature as any).link ? (
-                  <Link href={(feature as any).link} className="block">
+                  <Link 
+                    href={(feature as any).link} 
+                    className="block"
+                    onClick={() => {
+                      trackClick('feature_card', feature.title)
+                      trackFeatureView(feature.title)
+                    }}
+                  >
                     {CardContent}
                   </Link>
                 ) : (

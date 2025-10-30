@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { useAnalytics } from '@/hooks/useAnalytics'
 
 /**
  * Final CTA Section - Dropease
@@ -12,6 +13,7 @@ const CTASection = () => {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-100px' })
   const { t } = useLanguage()
+  const { trackCTAClick } = useAnalytics()
 
   return (
     <section className="relative py-32 px-6 overflow-hidden" ref={ref}>
@@ -38,6 +40,7 @@ const CTASection = () => {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
+            onClick={() => trackCTAClick(t('cta.button'), 'main_cta')}
             className="group relative px-8 py-4 rounded-lg bg-gradient-to-r from-accent-violet to-accent-cyan font-semibold text-white overflow-hidden"
           >
             {/* Animated glow effect */}
