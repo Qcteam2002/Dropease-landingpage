@@ -10,7 +10,8 @@ module.exports = {
     max_memory_restart: '1G',
     env: {
       NODE_ENV: 'production',
-      PORT: 3001  // Port riêng cho Dropease, tránh conflict với apps khác (có thể đổi 3002, 3003... nếu 3001 bị chiếm)
+      PORT: 3002,  // Port riêng cho Dropease, tránh conflict với apps khác
+      NEXT_PUBLIC_GA_ID: 'G-Y1DDWQWY4F'  // Google Analytics ID
     },
     error_file: './logs/error.log',
     out_file: './logs/out.log',
