@@ -1,0 +1,190 @@
+# 🔹 Dropease – Product Intelligence for Shopify
+## English Version
+
+---
+
+## Overview
+
+Dropease helps Shopify sellers truly understand their customers, craft product content and visuals that connect with real buyers, and keep a consistent brand tone across every product — all in seconds.
+
+No marketing team required. No repetitive writing. Just insights that turn into conversions.
+
+**Tagline:** "From Insight to Impact — Configure Once, Optimize Everywhere."
+
+---
+
+## 🌍 Key Information
+
+| | |
+|---|---|
+| **Website** | https://dropease.tech |
+| **Email** | contact@dropease.ai |
+| **Platform** | Next.js 14 + React 18 + Framer Motion |
+| **Target Users** | Shopify store owners, marketers, dropshippers, agencies |
+
+---
+
+## 🚀 Core Features
+
+### 1. Audience Insight Discovery
+- **URL:** https://dropease.tech/features/audience-insight
+- **Description:** Analyze and reveal 3 ideal buyer personas for each product — their motivations, needs, and tone preferences.
+- **Benefit:** Know exactly who will buy and why, instead of guessing.
+
+### 2. Smart Content Generation
+- **URL:** https://dropease.tech/features/smart-content
+- **Description:** Generate titles and descriptions aligned with each identified buyer segment.
+- **Benefit:** Boost conversion up to 25%, save 80% content writing time.
+
+### 3. Visual Intelligence
+- **URL:** https://dropease.tech/features/visual-intelligence
+- **Description:** Instantly generate on-brand product visuals in three styles — Studio, Lifestyle, and Infographic.
+- **Benefit:** No designer needed, images always match your brand tone.
+
+### 4. AI Visibility Optimization
+- **URL:** https://dropease.tech/features/ai-visibility
+- **Description:** Optimize your products to be understood and recommended by modern search platforms such as ChatGPT or Google Gemini.
+- **Benefit:** Your products appear when users ask: "What should I buy for someone who loves travel?"
+
+### 5. One-Click Shopify Sync
+- **Description:** Push all content, visuals, and configurations to your Shopify store in one click.
+- **Benefit:** Deploy hundreds of products in minutes instead of days.
+
+### 6. Brand Consistency at Scale
+- **Description:** Every product follows a unified setup (tone, market, persona) to maintain brand consistency.
+- **Benefit:** Strong, consistent brand even with hundreds of products.
+
+---
+
+## ⚙️ How It Works (4 Steps)
+
+1. **Connect Shopify** – Connect your Shopify store in 30 seconds
+2. **Discover Buyers** – Discover your 3 ideal buyer segments automatically
+3. **Generate Content** – Create content and visuals for each segment
+4. **Push to Shopify** – Publish everything to Shopify with one click
+
+---
+
+## 👥 Sample Personas
+
+### The Festival & Travel Enthusiast
+- **Profile:** Loves travel, wants to stand out, willing to spend on unique experiences.
+- **Tone:** Vibrant • Adventurous • Expressive
+
+### The Urban Minimalist
+- **Profile:** Dislikes clutter, values simplicity and long-term quality.
+- **Tone:** Clean • Minimal • Elegant
+
+### The Luxury Gifter
+- **Profile:** Looks for premium, meaningful gifts that impress.
+- **Tone:** Elegant • Sophisticated • Premium
+
+---
+
+## 💰 Pricing
+
+| Plan | Description | Price |
+|---|---|---|
+| **Free** | 5 products, 3 personas per product | $0/month |
+| **Pro** | 100 products, unlimited personas, Shopify sync | $49/month |
+| **Enterprise** | Unlimited, white-label & custom integrations | Custom |
+
+---
+
+## 💡 What Problems We Solve
+
+| Problem | Solution |
+|---|---|
+| Don't know who your customers really are | Discover 3 ideal buyer personas instantly |
+| Spending hours writing product descriptions | Auto-generate buyer-aligned content |
+| Inconsistent brand messaging | Configure once, sync across entire store |
+| Products hard to discover | Optimize for modern search platforms |
+| Can't scale efficiently | Optimize hundreds of products in minutes |
+
+---
+
+## 💎 Why We're Different
+
+1. **Insight-first** – Understand buyers before creating content
+2. **Unified workflow** – Insights, content, and visuals based on unified configuration
+3. **Modern search optimization** – Help products appear in intelligent search results
+4. **Time-efficient** – Reduce hours of work to minutes
+5. **Consistent brand identity** – Automation that preserves personalization
+
+---
+
+## 🧭 Target Users
+
+| Type | Description |
+|---|---|
+| **Small Store Owners** | Managing 1–5 shops, dropshipping, print-on-demand |
+| **Marketer / Product Manager** | Optimizing 100–500 SKUs, focusing on conversion |
+| **Dropshipper / Agency** | Managing multiple shops or clients |
+
+---
+
+## ⚡ Technology Stack
+
+- **Framework:** Next.js 14 (App Router)
+- **Frontend:** React 18, TypeScript
+- **Styling:** TailwindCSS
+- **Animation:** Framer Motion
+- **Integration:** Shopify Admin API
+
+---
+
+## 🗣️ Tone of Voice
+
+Clear, confident, value-driven. Avoid overusing technical terms.
+
+**✅ Use:** fast, unified, time-saving, effective  
+**❌ Avoid:** AI-powered, machine learning, algorithmic, leverage
+
+---
+
+## 💬 Testimonials
+
+> "Dropease helped me understand my customers better than ever. Conversion rate increased 32% in just a few weeks."  
+> — **Sarah Chen**, Fashion Store Owner
+
+> "I manage 8 stores. Dropease helps me optimize hundreds of products in hours instead of weeks."  
+> — **Michael Rodriguez**, Dropshipping Expert
+
+---
+
+## 📊 Key Metrics
+
+- ⏱️ Save **80% time** on content writing
+- 📈 Increase **conversion rate by 25%**
+- 🚀 Optimize **100+ products** in minutes
+- 👥 **3 personas** discovered per product
+- 🔄 **1-click** Shopify sync
+
+---
+
+## 🔗 Important Links
+
+- **🏠 Homepage:** https://dropease.tech
+- **🎯 Audience Insight:** https://dropease.tech/features/audience-insight
+- **✍️ Smart Content:** https://dropease.tech/features/smart-content
+- **🎨 Visual Intelligence:** https://dropease.tech/features/visual-intelligence
+- **🔍 AI Visibility:** https://dropease.tech/features/ai-visibility
+- **💰 Pricing:** https://dropease.tech/#pricing
+- **📧 Contact:** contact@dropease.ai
+
+---
+
+## 🌐 Target Market
+
+- **Primary:** Shopify merchants with 10-500 products
+- **Secondary:** Dropshippers, E-commerce agencies, Product managers
+- **Geography:** Global — focus on US, Europe, Southeast Asia
+- **Market Size:** 2+ million Shopify stores worldwide
+
+---
+
+**Last Updated:** October 2025  
+**Version:** 1.1  
+**Language:** English  
+**Focus:** Insight-driven, user-centric, not AI-centric
+

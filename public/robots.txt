@@ -1,0 +1,25 @@
+# Dropease.tech - Robots.txt
+# https://dropease.tech/robots.txt
+
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Disallow specific paths (if any)
+Disallow: /api/
+Disallow: /_next/static/
+Disallow: *.json$
+
+# Sitemap
+Sitemap: https://dropease.tech/sitemap.xml
+
+# LLMs.txt files for AI systems
+# This helps AI models (ChatGPT, Gemini, etc.) find structured information about our site
+AI-crawlers: /llms.txt
+LLMs-txt: https://dropease.tech/llms.txt
+LLMs-txt-vi: https://dropease.tech/llms-vi.txt
+LLMs-txt-en: https://dropease.tech/llms-en.txt
+
+# Crawl-delay
+Crawl-delay: 1
+

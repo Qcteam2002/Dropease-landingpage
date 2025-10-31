@@ -1,0 +1,215 @@
+# 🔹 Dropease – Product Intelligence for Shopify
+## (Song ngữ Việt – Anh / Bilingual Vietnamese – English)
+
+---
+
+## 🇻🇳 Giới thiệu
+
+Dropease giúp người bán Shopify hiểu khách hàng sâu sắc hơn, tạo nội dung và hình ảnh sản phẩm đúng với người mua, và giữ thương hiệu nhất quán trên toàn cửa hàng — chỉ trong vài giây.
+
+Không cần đội marketing, không cần copywriter — chỉ cần hiểu rõ người mua và để mọi sản phẩm kể câu chuyện đúng của thương hiệu bạn.
+
+**Tagline:** "Từ Insight đến Tác động — Cấu hình một lần, Tối ưu mọi nơi."
+
+---
+
+## 🇬🇧 Overview
+
+Dropease helps Shopify sellers truly understand their customers, craft product content and visuals that connect with real buyers, and keep a consistent brand tone across every product — all in seconds.
+
+No marketing team required. No repetitive writing. Just insights that turn into conversions.
+
+**Tagline:** "From Insight to Impact — Configure Once, Optimize Everywhere."
+
+---
+
+## 🌍 Thông tin chung / Key Information
+
+| | |
+|---|---|
+| **Website** | https://dropease.tech |
+| **Email** | contact@dropease.ai |
+| **Platform** | Next.js 14 + React 18 + Framer Motion |
+| **Target Users** | Chủ cửa hàng Shopify, Marketer, Dropshipper, Agency / Shopify store owners, marketers, dropshippers, agencies |
+
+---
+
+## 🚀 Tính năng chính / Core Features
+
+### 1. Audience Insight Discovery
+- **URL:** https://dropease.tech/features/audience-insight
+- **🇻🇳:** Phân tích và khám phá 3 nhóm khách hàng lý tưởng cho mỗi sản phẩm, bao gồm nhu cầu, động lực mua và phong cách giao tiếp.
+- **🇬🇧:** Analyze and reveal 3 ideal buyer personas for each product — their motivations, needs, and tone preferences.
+- **Lợi ích / Benefit:** Hiểu rõ ai sẽ mua và tại sao họ mua, thay vì đoán mò / Know exactly who will buy and why, instead of guessing.
+
+### 2. Smart Content Generation
+- **URL:** https://dropease.tech/features/smart-content
+- **🇻🇳:** Tạo tiêu đề và mô tả sản phẩm phù hợp với từng nhóm khách hàng đã khám phá.
+- **🇬🇧:** Generate titles and descriptions aligned with each identified buyer segment.
+- **Lợi ích / Benefit:** Tăng tỷ lệ chuyển đổi lên đến 25%, giảm 80% thời gian viết nội dung / Boost conversion up to 25%, save 80% content writing time.
+
+### 3. Visual Intelligence
+- **URL:** https://dropease.tech/features/visual-intelligence
+- **🇻🇳:** Tự động tạo hình ảnh sản phẩm theo phong cách thương hiệu: Studio, Lifestyle, hoặc Infographic.
+- **🇬🇧:** Instantly generate on-brand product visuals in three styles — Studio, Lifestyle, and Infographic.
+- **Lợi ích / Benefit:** Không cần designer, ảnh luôn đồng bộ với tone thương hiệu / No designer needed, images always match your brand tone.
+
+### 4. AI Visibility Optimization
+- **URL:** https://dropease.tech/features/ai-visibility
+- **🇻🇳:** Tối ưu sản phẩm để được "hiểu" và đề xuất bởi các nền tảng tìm kiếm mới như ChatGPT hay Google Gemini.
+- **🇬🇧:** Optimize your products to be understood and recommended by modern search platforms such as ChatGPT or Google Gemini.
+- **Lợi ích / Benefit:** Sản phẩm của bạn xuất hiện khi người dùng hỏi: "Tôi nên mua gì cho bạn gái thích du lịch?" / "What should I buy for someone who loves travel?"
+
+### 5. One-Click Shopify Sync
+- **🇻🇳:** Đẩy toàn bộ nội dung, hình ảnh và cấu hình sản phẩm lên Shopify chỉ với một cú nhấp chuột.
+- **🇬🇧:** Push all content, visuals, and configurations to your Shopify store in one click.
+- **Lợi ích / Benefit:** Triển khai hàng trăm sản phẩm trong vài phút thay vì vài ngày / Deploy hundreds of products in minutes instead of days.
+
+### 6. Brand Consistency at Scale
+- **🇻🇳:** Mỗi sản phẩm tuân theo cùng một cấu hình (tone, thị trường, persona) để đảm bảo thương hiệu nhất quán.
+- **🇬🇧:** Every product follows a unified setup (tone, market, persona) to maintain brand consistency.
+- **Lợi ích / Benefit:** Thương hiệu mạnh mẽ, đồng bộ, ngay cả khi bạn có hàng trăm sản phẩm / Strong, consistent brand even with hundreds of products.
+
+---
+
+## ⚙️ Cách hoạt động / How It Works (4 Steps)
+
+| Bước / Step | 🇻🇳 Vietnamese | 🇬🇧 English |
+|---|---|---|
+| **1. Connect Shopify** | Kết nối cửa hàng Shopify trong 30 giây | Connect your Shopify store in 30 seconds |
+| **2. Discover Buyers** | Dropease tự động khám phá 3 nhóm khách hàng lý tưởng | Discover your 3 ideal buyer segments |
+| **3. Generate Content** | Tạo nội dung và hình ảnh phù hợp với từng nhóm khách hàng | Create content and visuals for each segment |
+| **4. Push to Shopify** | Đăng tất cả lên store chỉ bằng 1 click | Publish everything to Shopify with one click |
+
+---
+
+## 👥 Ví dụ personas / Sample Personas
+
+### The Festival & Travel Enthusiast
+- **🇻🇳:** Thích du lịch, muốn nổi bật, sẵn sàng chi cho trải nghiệm độc đáo.
+- **🇬🇧:** Loves travel, wants to stand out, willing to spend on unique experiences.
+- **Tone:** Vibrant • Adventurous • Expressive
+
+### The Urban Minimalist
+- **🇻🇳:** Ghét sự rườm rà, ưa thiết kế tinh gọn và bền bỉ.
+- **🇬🇧:** Dislikes clutter, values simplicity and long-term quality.
+- **Tone:** Clean • Minimal • Elegant
+
+### The Luxury Gifter
+- **🇻🇳:** Muốn tặng quà sang trọng, khác biệt và có ý nghĩa.
+- **🇬🇧:** Looks for premium, meaningful gifts that impress.
+- **Tone:** Elegant • Sophisticated • Premium
+
+---
+
+## 💰 Gói dịch vụ / Pricing
+
+| Plan | 🇻🇳 Vietnamese | 🇬🇧 English | Price |
+|---|---|---|---|
+| **Free** | 5 sản phẩm, 3 persona mỗi sản phẩm | 5 products, 3 personas per product | $0/mo |
+| **Pro** | 100 sản phẩm, không giới hạn persona, đồng bộ Shopify | 100 products, unlimited personas, Shopify sync | $49/mo |
+| **Enterprise** | Không giới hạn, hỗ trợ riêng & tích hợp tùy chỉnh | Unlimited, white-label & custom integrations | Custom |
+
+---
+
+## 💡 Dropease giải quyết gì / What Problems We Solve
+
+| Vấn đề / Problem | Giải pháp / Solution |
+|---|---|
+| 🇻🇳 Không hiểu rõ khách hàng là ai<br/>🇬🇧 Don't know who your customers really are | 🇻🇳 Hiểu ngay 3 nhóm khách hàng lý tưởng<br/>🇬🇧 Discover 3 ideal buyer personas instantly |
+| 🇻🇳 Tốn thời gian viết mô tả sản phẩm<br/>🇬🇧 Spending hours writing product descriptions | 🇻🇳 Tự động tạo nội dung phù hợp người mua<br/>🇬🇧 Auto-generate buyer-aligned content |
+| 🇻🇳 Thương hiệu thiếu nhất quán<br/>🇬🇧 Inconsistent brand messaging | 🇻🇳 Cấu hình một lần, đồng bộ toàn cửa hàng<br/>🇬🇧 Configure once, sync across entire store |
+| 🇻🇳 Sản phẩm khó được tìm thấy<br/>🇬🇧 Products hard to discover | 🇻🇳 Tối ưu hóa cho công cụ tìm kiếm hiện đại<br/>🇬🇧 Optimize for modern search platforms |
+| 🇻🇳 Khó mở rộng quy mô<br/>🇬🇧 Can't scale efficiently | 🇻🇳 Tối ưu hàng trăm sản phẩm chỉ trong vài phút<br/>🇬🇧 Optimize hundreds of products in minutes |
+
+---
+
+## 💎 Điểm khác biệt / Why We're Different
+
+1. **Insight-first** – 🇻🇳 Hiểu người mua trước khi tạo nội dung / 🇬🇧 Understand buyers before creating content
+2. **Unified workflow** – 🇻🇳 Insight, content, và hình ảnh dựa trên cùng cấu hình / 🇬🇧 Insights, content, and visuals based on unified configuration
+3. **Modern search optimization** – 🇻🇳 Giúp sản phẩm xuất hiện trong tìm kiếm thông minh / 🇬🇧 Help products appear in intelligent search results
+4. **Time-efficient** – 🇻🇳 Giảm hàng giờ công việc còn vài phút / 🇬🇧 Reduce hours of work to minutes
+5. **Consistent brand identity** – 🇻🇳 Tự động hóa mà vẫn giữ tính cá nhân hóa / 🇬🇧 Automation that preserves personalization
+
+---
+
+## 🧭 Người dùng mục tiêu / Target Users
+
+| Type | 🇻🇳 Vietnamese | 🇬🇧 English |
+|---|---|---|
+| **Chủ cửa hàng nhỏ / Small Store Owners** | Quản lý 1–5 shop, dropshipping, print-on-demand | Managing 1–5 shops, dropshipping, print-on-demand |
+| **Marketer / Product Manager** | Tối ưu hàng trăm sản phẩm, tập trung conversion | Optimizing 100–500 SKUs, focusing on conversion |
+| **Dropshipper / Agency** | Quản lý nhiều shop hoặc khách hàng | Managing multiple shops or clients |
+
+---
+
+## ⚡ Công nghệ / Technology Stack
+
+| | |
+|---|---|
+| **Framework** | Next.js 14 (App Router) |
+| **Frontend** | React 18, TypeScript |
+| **Styling** | TailwindCSS |
+| **Animation** | Framer Motion |
+| **Integration** | Shopify Admin API |
+
+---
+
+## 🗣️ Tone thương hiệu / Tone of Voice
+
+**🇻🇳:** Ngôn ngữ gần gũi, tập trung kết quả, tránh buzzword kỹ thuật.  
+**🇬🇧:** Clear, confident, value-driven. Avoid overusing technical terms.
+
+**✅ Dùng / Use:** nhanh chóng, đồng bộ, tiết kiệm thời gian, hiệu quả / fast, unified, time-saving, effective  
+**❌ Tránh / Avoid:** AI-powered, machine learning, algorithmic, leverage
+
+---
+
+## 💬 Chứng thực / Testimonials
+
+> 🇻🇳 "Dropease giúp tôi hiểu rõ khách hàng hơn bao giờ hết. Conversion rate tăng 32% chỉ sau vài tuần."  
+> 🇬🇧 "Dropease helped me understand my customers better than ever. Conversion rate increased 32% in just a few weeks."  
+> — **Sarah Chen**, Fashion Store Owner
+
+> 🇻🇳 "Tôi quản lý 8 shop. Dropease giúp tôi tối ưu hàng trăm sản phẩm trong vài giờ thay vì vài tuần."  
+> 🇬🇧 "I manage 8 stores. Dropease helps me optimize hundreds of products in hours instead of weeks."  
+> — **Michael Rodriguez**, Dropshipping Expert
+
+---
+
+## 📊 Chỉ số tác động / Key Metrics
+
+- ⏱️ Tiết kiệm **80% thời gian** viết nội dung / Save **80% time** on content writing
+- 📈 Tăng **25% tỷ lệ chuyển đổi** / Increase **conversion rate by 25%**
+- 🚀 Tối ưu **100+ sản phẩm** trong vài phút / Optimize **100+ products** in minutes
+- 👥 **3 personas** được khám phá cho mỗi sản phẩm / **3 personas** discovered per product
+- 🔄 **1-click** đồng bộ Shopify / **1-click** Shopify sync
+
+---
+
+## 🔗 Liên kết quan trọng / Important Links
+
+- **🏠 Trang chủ / Homepage:** https://dropease.tech
+- **🎯 Audience Insight:** https://dropease.tech/features/audience-insight
+- **✍️ Smart Content:** https://dropease.tech/features/smart-content
+- **🎨 Visual Intelligence:** https://dropease.tech/features/visual-intelligence
+- **🔍 AI Visibility:** https://dropease.tech/features/ai-visibility
+- **💰 Pricing:** https://dropease.tech/#pricing
+- **📧 Contact:** contact@dropease.ai
+
+---
+
+## 🌐 Thị trường / Target Market
+
+- **Primary:** 🇻🇳 Người bán Shopify với 10-500 sản phẩm / 🇬🇧 Shopify merchants with 10-500 products
+- **Secondary:** 🇻🇳 Dropshippers, Agency thương mại điện tử, Quản lý sản phẩm / 🇬🇧 Dropshippers, E-commerce agencies, Product managers
+- **Geography:** Global — focus on US, Europe, Southeast Asia
+- **Market Size:** 2+ million Shopify stores worldwide
+
+---
+
+**Last Updated:** October 2025  
+**Version:** 1.1  
+**Languages:** Vietnamese + English  
+**Focus:** Insight-driven, user-centric, not AI-centric

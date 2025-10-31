@@ -89,7 +89,7 @@ const PersonaDemoSection = () => {
                 {/* Content */}
                 <div className="relative z-10">
                   {/* Title with gradient */}
-                  <h3 className={`text-xl font-bold mb-6 bg-gradient-to-r ${persona.gradient} bg-clip-text text-transparent`}>
+                  <h3 className="text-xl font-bold mb-6 text-gray-100">
                     {persona.title}
                   </h3>
 
