@@ -35,3 +35,7 @@ next-env.d.ts
 # custom ignore
 .env.production
 package-lock.json
+
+# data files (early access submissions)
+/data/
+data/*.json

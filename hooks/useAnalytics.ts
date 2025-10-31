@@ -15,8 +15,13 @@ export const useAnalytics = () => {
 
   // Track custom events
   const trackEvent = useCallback(
-    (action: string, category: string, label?: string, value?: number) => {
-      event({ action, category, label, value })
+    (params: { action: string; category: string; label?: string; value?: number } | string, category?: string, label?: string, value?: number) => {
+      // Support both object and individual parameters
+      if (typeof params === 'object') {
+        event(params)
+      } else {
+        event({ action: params, category: category || 'general', label, value })
+      }
     },
     []
   )

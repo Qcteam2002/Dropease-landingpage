@@ -1,10 +1,11 @@
 'use client'
 
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import { useInView } from 'framer-motion'
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useAnalytics } from '@/hooks/useAnalytics'
+import EarlyAccessForm from './EarlyAccessForm'
 
 /**
  * Final CTA Section - Dropease
@@ -14,6 +15,7 @@ const CTASection = () => {
   const isInView = useInView(ref, { once: true, margin: '-100px' })
   const { t } = useLanguage()
   const { trackCTAClick } = useAnalytics()
+  const [showEarlyAccessForm, setShowEarlyAccessForm] = useState(false)
 
   return (
     <section className="relative py-32 px-6 overflow-hidden" ref={ref}>
@@ -36,11 +38,14 @@ const CTASection = () => {
             {t('cta.titleSuffix')}
           </h2>
 
-          {/* CTA Button */}
+          {/* CTA Button - Early Access */}
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
-            onClick={() => trackCTAClick(t('cta.button'), 'main_cta')}
+            onClick={() => {
+              trackCTAClick(t('nav.getStarted'), 'final_cta')
+              setShowEarlyAccessForm(true)
+            }}
             className="group relative px-8 py-4 rounded-lg bg-gradient-to-r from-accent-violet to-accent-cyan font-semibold text-white overflow-hidden"
           >
             {/* Animated glow effect */}
@@ -57,7 +62,7 @@ const CTASection = () => {
               className="absolute inset-0 bg-gradient-to-r from-accent-violet to-accent-cyan blur-xl"
             />
             
-            <span className="relative">{t('cta.button')}</span>
+            <span className="relative">{t('nav.getStarted')}</span>
           </motion.button>
 
           {/* Trust indicators */}
@@ -82,6 +87,13 @@ const CTASection = () => {
           </div>
         </motion.div>
       </div>
+
+      {/* Early Access Form Modal */}
+      <AnimatePresence>
+        {showEarlyAccessForm && (
+          <EarlyAccessForm onClose={() => setShowEarlyAccessForm(false)} />
+        )}
+      </AnimatePresence>
     </section>
   )
 }

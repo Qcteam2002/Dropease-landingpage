@@ -1,8 +1,10 @@
 'use client'
 
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
+import { useState } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
+import EarlyAccessForm from './EarlyAccessForm'
 
 /**
  * Hero Section - Dropease AI Product Intelligence
@@ -10,6 +12,8 @@ import { useLanguage } from '@/contexts/LanguageContext'
  */
 const HeroSection = () => {
   const { t } = useLanguage()
+  const [showEarlyAccessForm, setShowEarlyAccessForm] = useState(false)
+  
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -83,10 +87,13 @@ const HeroSection = () => {
           variants={itemVariants}
           className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16"
         >
-          {/* Primary CTA */}
-          <button className="group px-8 py-4 rounded-lg bg-gradient-to-r from-accent-violet to-accent-cyan font-semibold text-white hover:shadow-[0_0_40px_rgba(139,92,246,0.6)] transition-all duration-300 hover:scale-105">
+          {/* Primary CTA - Early Access */}
+          <button 
+            onClick={() => setShowEarlyAccessForm(true)}
+            className="group px-8 py-4 rounded-lg bg-gradient-to-r from-accent-violet to-accent-cyan font-semibold text-white hover:shadow-[0_0_40px_rgba(139,92,246,0.6)] transition-all duration-300 hover:scale-105"
+          >
             <span className="flex items-center gap-2">
-              {t('hero.ctaPrimary')}
+              {t('nav.getStarted')}
               <ArrowRight
                 size={20}
                 className="group-hover:translate-x-1 transition-transform"
@@ -94,10 +101,13 @@ const HeroSection = () => {
             </span>
           </button>
 
-          {/* Secondary CTA */}
-          <button className="group px-8 py-4 rounded-lg border border-accent-violet font-semibold text-white hover:bg-accent-violet/10 transition-all duration-300">
+          {/* Secondary CTA - Learn More */}
+          <a 
+            href="#features"
+            className="group px-8 py-4 rounded-lg border border-accent-violet font-semibold text-white hover:bg-accent-violet/10 transition-all duration-300"
+          >
             {t('hero.ctaSecondary')}
-          </button>
+          </a>
         </motion.div>
 
         {/* Hero Image/Dashboard Preview */}
@@ -124,6 +134,13 @@ const HeroSection = () => {
           <div className="absolute -bottom-20 left-1/2 -translate-x-1/2 w-4/5 h-32 bg-accent-violet/40 blur-[100px] -z-10" />
         </motion.div>
       </motion.div>
+
+      {/* Early Access Form Modal */}
+      <AnimatePresence>
+        {showEarlyAccessForm && (
+          <EarlyAccessForm onClose={() => setShowEarlyAccessForm(false)} />
+        )}
+      </AnimatePresence>
     </section>
   )
 }

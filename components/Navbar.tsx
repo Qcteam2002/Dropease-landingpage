@@ -1,11 +1,12 @@
 'use client'
 
-import { motion, useScroll, useTransform } from 'framer-motion'
+import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion'
 import { useState, useEffect } from 'react'
 import { Menu, X, Globe } from 'lucide-react'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useAnalytics } from '@/hooks/useAnalytics'
 import Link from 'next/link'
+import EarlyAccessForm from './EarlyAccessForm'
 
 /**
  * Navbar - Dropease.ai branding with language switcher
@@ -14,6 +15,7 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [showLangMenu, setShowLangMenu] = useState(false)
+  const [showEarlyAccessForm, setShowEarlyAccessForm] = useState(false)
   const { scrollY } = useScroll()
   const { language, setLanguage, t } = useLanguage()
   const { trackClick, trackLanguageSwitch } = useAnalytics()
@@ -130,6 +132,10 @@ const Navbar = () => {
             <motion.button
               whileHover={{ scale: 1.05, boxShadow: '0 0 30px rgba(139, 92, 246, 0.4)' }}
               whileTap={{ scale: 0.95 }}
+              onClick={() => {
+                trackClick('nav_cta', 'early_access')
+                setShowEarlyAccessForm(true)
+              }}
               className="px-6 py-2.5 rounded-lg bg-gradient-to-r from-accent-violet to-accent-cyan text-white font-semibold shadow-lg"
             >
               {t('nav.getStarted')}
@@ -194,13 +200,27 @@ const Navbar = () => {
                 </div>
               </div>
 
-              <button className="mt-4 px-6 py-2.5 rounded-lg bg-gradient-to-r from-accent-violet to-accent-cyan text-white font-semibold shadow-lg text-center">
+              <button 
+                onClick={() => {
+                  trackClick('mobile_nav_cta', 'early_access')
+                  setShowEarlyAccessForm(true)
+                  setIsMobileMenuOpen(false)
+                }}
+                className="mt-4 px-6 py-2.5 rounded-lg bg-gradient-to-r from-accent-violet to-accent-cyan text-white font-semibold shadow-lg text-center"
+              >
                 {t('nav.getStarted')}
               </button>
             </div>
           </motion.div>
         )}
       </div>
+
+      {/* Early Access Form Modal */}
+      <AnimatePresence>
+        {showEarlyAccessForm && (
+          <EarlyAccessForm onClose={() => setShowEarlyAccessForm(false)} />
+        )}
+      </AnimatePresence>
     </motion.nav>
   )
 }
